@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{% block title %} {% endblock %}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/layout.css') }}">
+		{% block head %} {% endblock %}
+	</head>
+	<body>	
+		<header class="navbar">
+            <img class="logo" src="#" alt="CoronaVirus-Image">
+			<label for="toggle">&#9776;</label>
+			<input type="checkbox" id="toggle">
+			<nav>
+				<ul class="nav-links">
+					<li><a class="hvr-shutter-out-horizontal" href="/">Home</a></li>
+					<li><a class="hvr-shutter-out-horizontal" href="/about">About CORONA</a></li>
+					<li><a class="hvr-shutter-out-horizontal" href="/form">CORONA Checker</a></li>
+					<li><a class="hvr-shutter-out-horizontal" href="/medical-centers">Hospital Search</a></li>
+					<li><a class="hvr-shutter-out-horizontal" href="#">Feedback</a></li>
+					<li><a class="hvr-shutter-out-horizontal" href="#">Contact Us</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		{% block body %} {% endblock %}
+
+		<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+			<div class="container text-center">
+			  <small>Copyright &copy; Corona Patient Prediction @DevPyJp</small>
+			</div>
+		</footer>
+	</body>
+</html>
