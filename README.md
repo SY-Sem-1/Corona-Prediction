@@ -1,19 +1,39 @@
-# CORONA-PREDICTION
+# EDAI-Web-App
 
 ## Virtual-Environment Setup
 
-Use the package manager conda to create Virtual Environment
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install flask.
 
 ```bash
-conda create --name corona python=3.8.2
+pip install virtualenv
+```
+```bash
+cd C:\Users\Your Account
+```
+```bash
+mkdir Virtual Envs
+```
+```bash
+cd Virtual Envs
+```
+```bash
+virtualenv Corona
 ```
 
-## Activating and Deactivating Virtual-Environment
+## Activating Virtual-Environment
 ```bash
-conda activate env_name
+cd C:\Users\Your Account\Virtual Envs\Corona
 ```
 ```bash
-conda deactivate 
+Scripts\activate
+```
+
+### Deactivating Virtual-Environment
+```bash
+cd C:\Users\Your Account\Virtual Envs\Corona
+```
+```bash
+Scripts\deactivate
 ```
 
 ## Setting Up Flask Project
@@ -24,22 +44,16 @@ cd path to Project folder where you have saved your project
 pip install -r libraries.txt
 ```
 
-## Running Flask Server
+# Running Flask Server
 ```bash
 cd path to Project folder where you have saved your project
 ```
 ```bash
-cd src(DATE)
+cd src
 ```
 ```bash
 python app.py
 ```
-## To Stop Flask Server
-```bash
-CTRL+C 
-```
-
-
 
 
 
