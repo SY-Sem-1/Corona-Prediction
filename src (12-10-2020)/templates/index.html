@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+{% block title %}Corona-Home{% endblock %}
+
+{% block body %} 
+    <div class="container">
+        <div class="row text-center">
+            <!-- <div class="col-sm">Corona Stats</div> -->
+            <div class="col-sm shadow p-3 mb-5 bg-white rounded text-danger">
+                <h5>Total Confirmed Cases</h5>
+                <h2>{{ header_data["Confirmed"] }}</h2>
+            </div>
+            <div class="col-sm shadow p-3 mb-5 bg-white rounded text-primary">
+                <h5>Total Active Cases</h5>
+                <h2>{{ header_data["Active"] }}</h2>
+            </div>
+            <div class="col-sm shadow p-3 mb-5 bg-white rounded text-success">
+                <h5>Total Recovered Cases</h5>
+                <h2>{{ header_data["Recovered"] }}</h2>
+            </div>
+            <div class="col-sm thumbnail shadow p-3 mb-5 bg-white rounded text-dark">
+                <h5>Total Deceased Cases</h5>
+                <h2>{{ header_data["Deaths"] }}</h2>
+            </div>
+        </div>
+
+        <div class="shadow p-3 mb-5 bg-white rounded ">
+            <div class="row text-center">
+                <div class="col-sm">State/UT</div>
+                <div class="col-sm">Confirmed</div>
+                <div class="col-sm">Active</div>
+                <div class="col-sm">Recovered</div>
+                <div class="col-sm">Deceased</div>
+            </div>
+            
+            {% for states in table_data %}
+                <div class="row text-center">
+                    <div class="col-sm">{{ states["state"] }}</div>
+                    <div class="col-sm">{{ states["confirmed"] }}</div>
+                    <div class="col-sm">{{ states["active"] }}</div>
+                    <div class="col-sm">{{ states["recovered"] }}</div>
+                    <div class="col-sm">{{ states["deaths"] }}</div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

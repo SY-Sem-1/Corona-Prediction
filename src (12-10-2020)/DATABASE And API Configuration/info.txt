@@ -1,0 +1,1 @@
+This is a folder where all the configuration files and info regarding project is stored in json format
