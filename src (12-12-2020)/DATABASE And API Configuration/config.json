@@ -1,0 +1,25 @@
+{
+    "DATABASE" : {
+        "LOCAL" : {
+            "HOST" : "localhost",
+            "USER" : "root",
+            "PORT" : 3306,
+            "DATABASE" : "corona",
+            "PASSWORD" : "anubhav285732A",
+            "CURSOR" : "DictCursor"
+        },
+        "REMOTE" : {
+            "HOST" : "db4free.net",
+            "USER" : "edteam",
+            "PORT" : 3306,
+            "DATABASE" : "edcorona",
+            "PASSWORD" : "edteam12141819",
+            "CURSOR" : "DictCursor"
+        }
+    },
+
+    "CORONA" : {
+        "COUNTRY_DATA_URL" : "https://api.covid19api.com/country/india?from=2020-03-01T00:00:00Z&to=",
+        "STATE_DATA_URL" : "https://api.covidindiatracker.com/state_data.json"
+    }
+}

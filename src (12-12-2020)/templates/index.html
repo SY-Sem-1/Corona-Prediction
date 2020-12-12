@@ -23,13 +23,13 @@
             </div>
         </div>
 
-        <div class="shadow p-3 mb-5 bg-white rounded ">
-            <div class="row text-center alert alert-primary">
-                <div class="col-sm">State/UT</div>
-                <div class="col-sm">Confirmed</div>
-                <div class="col-sm">Active</div>
-                <div class="col-sm">Recovered</div>
-                <div class="col-sm">Deceased</div>
+        <div  table class="table table-dark">
+            <div class="row text-center">
+                <div class="col-sm shadow p-2 mb-10 bg-info rounded text-dark">State/UT</div>
+                <div class="col-sm shadow p-2 mb-3 bg-danger rounded text-dark">Confirmed</div>
+                <div class="col-sm shadow p-2 mb-10 bg-success rounded text-dark">Active</div>
+                <div class="col-sm shadow p-2 mb-3 bg-primary rounded text-dark">Recovered</div>
+                <div class="col-sm shadow p-2 mb-10 bg-warning rounded text-dark">Deceased</div>
             </div>
             
             {% for states in table_data %}
